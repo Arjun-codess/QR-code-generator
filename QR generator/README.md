@@ -60,4 +60,9 @@ QR generator/
 - `youtube.com`
 - `stackoverflow.com`
 
-The generator will automatically handle URLs with or without the `https://` protocol.
+The generator will automatically handle URLs with or without the `https://` protocol.<img width="847" height="1024" alt="Screenshot 2025-09-28 154644" src="https://github.com/user-attachments/assets/356eba1c-e894-45ab-964d-e20f2399ea5f" />
+
+
+
+
+
