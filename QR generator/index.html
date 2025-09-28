@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QR Code Generator</h1>
+            <p>Generate QR codes for any URL instantly</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="urlInput">Enter URL:</label>
+                    <input type="url" id="urlInput" placeholder="https://example.com" required>
+                </div>
+                <button id="generateBtn" class="generate-btn">Generate QR Code</button>
+            </div>
+            
+            <div class="output-section">
+                <div id="qrContainer" class="qr-container">
+                    <div class="placeholder">
+                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                            <path d="m5 5 2 2"/>
+                            <path d="m5 17 2 2"/>
+                            <path d="m17 5 2 2"/>
+                            <path d="m15 15 1 1"/>
+                            <path d="m17 17 1 1"/>
+                        </svg>
+                        <p>Your QR code will appear here</p>
+                    </div>
+                </div>
+                
+                <div class="download-section" id="downloadSection" style="display: none;">
+                    <button id="downloadBtn" class="download-btn">Download QR Code</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Enter any valid URL to generate a scannable QR code</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
