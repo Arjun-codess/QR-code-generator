@@ -2,6 +2,8 @@
 
 # QR Code Generator
 
+This tool helps to convert the url into QR scanner which is very easy for scan. 
+
 A modern, responsive QR code generator that creates QR codes for any URL input. Built with HTML, CSS, and JavaScript.
 
 ## Features
