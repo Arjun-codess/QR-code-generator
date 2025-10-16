@@ -47,7 +47,7 @@ class QRCodeGenerator {
     isValidURL(string) {
         if (!string) return false;
         
-        // Simple URL validation
+        // URL validation
         const urlPattern = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
         const ipPattern = /^(https?:\/\/)?((\d{1,3}\.){3}\d{1,3})(:\d+)?(\/.*)?$/;
         
@@ -235,7 +235,7 @@ class QRCodeGenerator {
             const link = document.createElement('a');
             link.download = `qrcode-${Date.now()}.png`;
             
-            // Try canvas download first
+            
             if (this.currentQRCode) {
                 try {
                     link.href = this.currentQRCode.toDataURL('image/png');
